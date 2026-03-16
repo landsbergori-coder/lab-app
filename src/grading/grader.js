@@ -58,11 +58,15 @@ function gradeTable(answer) {
     const leafIdx = headers.findIndex(h => h.includes('עלים') || h.includes('על'))
     const distIdx = headers.findIndex(h => h.includes('מרחק') || h.includes('נוזל') || h.includes('ס"מ') || h.includes('cm'))
 
-    const getCell = (rowId, idx) => idx >= 0 ? (val.cells[rowId]?.[idx] ?? '') : ''
+    // Fallback to positional index if keyword not found
+    const cIdx = concIdx >= 0 ? concIdx : 0
+    const lIdx = leafIdx >= 0 ? leafIdx : 1
+    const dIdx = distIdx >= 0 ? distIdx : 2
+    const getCell = (rowId, idx) => val.cells[rowId]?.[idx] ?? ''
 
-    rowA = { concentration: getCell('א', concIdx), leaves: getCell('א', leafIdx), distance: getCell('א', distIdx) }
-    rowB = { concentration: getCell('ב', concIdx), leaves: getCell('ב', leafIdx), distance: getCell('ב', distIdx) }
-    rowC = { concentration: getCell('ג', concIdx), leaves: getCell('ג', leafIdx), distance: getCell('ג', distIdx) }
+    rowA = { concentration: getCell('א', cIdx), leaves: getCell('א', lIdx), distance: getCell('א', dIdx) }
+    rowB = { concentration: getCell('ב', cIdx), leaves: getCell('ב', lIdx), distance: getCell('ב', dIdx) }
+    rowC = { concentration: getCell('ג', cIdx), leaves: getCell('ג', lIdx), distance: getCell('ג', dIdx) }
   } else if (val.rows) {
     // Legacy format
     const rows = val.rows
