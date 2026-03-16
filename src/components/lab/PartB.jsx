@@ -25,7 +25,7 @@ const QUESTIONS_B = [
   {
     key: 'q48b', number: '48', subLabel: 'ב', points: 4,
     text: 'התבסס על המידע שבקטע "לידיעתך" (בעמוד 5) והסבר את הקשר בין המשתנה התלוי לבין דרך המדידה שלו.',
-    hint: 'לידיעתך: תמיסת האתנול שבמבחנה היא "נוזל מריץ". הנוזל נע לאורך הנייר בכוח הנימיות, ויחד אתו נעים הצבעונים (הפיגמנטים) השונים. כל צבע שונה האופייני לו.',
+    hint: 'לידיעתך: פליטת גז במבחנה גורמת לדחיקת הנוזל מהמבחנה אל הפיפטה, על כן יש התקדמות של קו הנוזל בפיפטה.',
     placeholder: 'הסבר את הקשר בין המשתנה התלוי לדרך המדידה...',
     minRows: 4,
   },
@@ -126,17 +126,8 @@ export default function PartB({ user, onAnswered }) {
         <div className="p-5 text-sm text-green-900 space-y-3" dir="rtl">
           <p>לצבעונים שונים המצוויים בעלי צמחים יש מסיסות שונה במים ובאתנול (כוהל / אלכוהול). בסעיף יב עבוד בהתאם לצמח שלרשותך.</p>
 
-          {/* Step יב - two-column */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="border-2 border-green-300 rounded-xl p-3 bg-green-50">
-              <p className="font-bold text-green-800 mb-2">🟢 יהודי נודד</p>
-              <p className="text-xs">יב. על שולחנך עלי ומכתש. החזק עלה אחד מעל המכתש וגזור אותו בעזרת מספריים לחתיכות קטנות. גזור גם את חתיכות העלים שנותרו מסעיף ג.</p>
-            </div>
-            <div className="border-2 border-purple-300 rounded-xl p-3 bg-purple-50">
-              <p className="font-bold text-purple-800 mb-2">🟣 אחירנטוס או שזיף פיסרדי</p>
-              <p className="text-xs">יב. על שולחנך עלי ומכתש. החזק 5 עלים מעל המכתש וגזור אותם בעזרת מספריים לחתיכות קטנות.</p>
-            </div>
-          </div>
+          {/* Step יב */}
+          <p><span className="font-semibold text-green-700">יב.</span> על שולחנך עלי ומכתש. החזק עלה אחד מעל המכתש וגזור אותו בעזרת מספריים לחתיכות קטנות. גזור גם את חתיכות העלים שנותרו מסעיף ג.</p>
 
           <p><span className="font-semibold text-green-700">יג.</span> כתוש את חתיכות העלים שבמכתש.</p>
 

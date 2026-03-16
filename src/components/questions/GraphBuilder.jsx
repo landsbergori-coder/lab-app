@@ -151,7 +151,7 @@ export default function GraphBuilder({ user, initialValue, onAnswered }) {
           <span className="text-xs text-gray-400">(7 נקודות)</span>
         </div>
         <p className="text-green-900 font-medium" dir="rtl">
-          לרשותך נייר מילימטרי. הצג עליו בדרך גרפית את תוצאות הניסוי שבטבלה.
+          הצג בדרך גרפית את תוצאות הניסוי שבטבלה.
         </p>
         <p className="text-sm text-green-700 mt-1" dir="rtl">
           לחץ על הגרף כדי להוסיף נקודות עבור כל זן. בחר קודם את הזן הרצוי.

@@ -69,35 +69,29 @@ export default function PartA({ user }) {
 
               <p><span className="font-semibold text-green-700">ג.</span> על שולחנך שתי צלחות לשימוש חד-פעמי. סמן אותן באותיות א-ב.</p>
 
-              {/* Two-column: leaf strip preparation */}
+              {/* Leaf strip preparation */}
               <div className="mt-3">
                 <p className="font-semibold mb-2 text-green-800">על שולחנך עלים של צמח. עבד לפי ההנחיות:</p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="border-2 border-green-300 rounded-xl p-4 bg-green-50">
-                    <h4 className="font-bold text-green-800 text-center mb-3 pb-2 border-b border-green-300">🟢 יהודי נודד</h4>
-                    <div className="space-y-2 text-xs">
-                      <p><strong>ד.</strong> הכן שתי רצועות של עלה ברוחב כ-1 ס"מ ובאורך כולל של 12 ס"מ. הצוּר באיורים I–IV ופעל כך:</p>
-                      <ul className="space-y-1 list-disc list-inside mr-2">
-                        <li>בחר את העלה הגדול ביותר והנח אותו על נייר מגבת. הנח את הסרגל ביותר בקצה העליון של העלה במקום שרוחבו הוא 2 ס"מ. בעזרת סכין חתוך את העלה לרוחבו.</li>
-                        <li>חזור על הפעולה בקצה האחר של העלה.</li>
-                        <li>הנח את הסרגל במרכז גדלות העלה לאורכו. חתוך את העלה לאורך הסרגל כך שתקבל שתי רצועות ארוכות של עלה.</li>
-                        <li>רצועה אחת הנח בצלחת א ורצועה שנייה – בצלחת ב.</li>
-                        <li>רשום את אורך הרצועות שהכנת: _____ ס"מ.</li>
-                      </ul>
-                      <p className="mt-2"><strong>ה.</strong> אם הרצועה שהכנת קצרה מ-12 ס"מ, חזור על ההוראות בסעיף ד: הכן רצועות נוספות ברוחב כ-1 ס"מ ובאורך שהכנת קודם לכ-13 ס"מ.</p>
-                      <ul className="space-y-1 list-disc list-inside mr-2">
-                        <li>הוסף רצועה אחת לצלחת א, ואת הרצועה האחרת לצלחת ב.</li>
-                        <li>הנח את שתי הרצועות שבצלחות על נייר המגבת. הנח את הקצה של אחת הרצועות על הרצועה האחרת, וחבר אותן זו לזו באמצעות "מהדק מסרדי" (שדכן). הקפד שהסיכה תמוקם לאורך הרצועות.</li>
-                        <li>באותו אופן חבר את שתי הרצועות שבצלחת ב.</li>
-                        <li>שמור את חלקי העלים הגזורים להמשך העבודה.</li>
-                      </ul>
+                <div className="border-2 border-green-300 rounded-xl p-4 bg-green-50">
+                  <div className="space-y-2 text-xs">
+                    <div className="bg-blue-50 border border-blue-200 rounded p-2 mb-2">
+                      💡 את סעיפים א–יא תוכל לראות בסרטון ההדגמה למעלה.
                     </div>
-                  </div>
-                  <div className="border-2 border-purple-300 rounded-xl p-4 bg-purple-50">
-                    <h4 className="font-bold text-purple-800 text-center mb-3 pb-2 border-b border-purple-300">🟣 אחירנטוס / שזיף פיסרדי</h4>
-                    <div className="space-y-2 text-xs">
-                      <p><strong>ד.</strong> עבוד לפי ההנחיות שבעמודה השמאלית.</p>
-                    </div>
+                    <p><strong>ד.</strong> הכן שתי רצועות של עלה ברוחב כ-1 ס"מ ובאורך כולל של 12 ס"מ. הצוּר באיורים I–IV ופעל כך:</p>
+                    <ul className="space-y-1 list-disc list-inside mr-2">
+                      <li>בחר את העלה הגדול ביותר והנח אותו על נייר מגבת. הנח את הסרגל ביותר בקצה העליון של העלה במקום שרוחבו הוא 2 ס"מ. בעזרת סכין חתוך את העלה לרוחבו.</li>
+                      <li>חזור על הפעולה בקצה האחר של העלה.</li>
+                      <li>הנח את הסרגל במרכז גדלות העלה לאורכו. חתוך את העלה לאורך הסרגל כך שתקבל שתי רצועות ארוכות של עלה.</li>
+                      <li>רצועה אחת הנח בצלחת א ורצועה שנייה – בצלחת ב.</li>
+                      <li>רשום את אורך הרצועות שהכנת: _____ ס"מ.</li>
+                    </ul>
+                    <p className="mt-2"><strong>ה.</strong> אם הרצועה שהכנת קצרה מ-12 ס"מ, חזור על ההוראות בסעיף ד: הכן רצועות נוספות ברוחב כ-1 ס"מ ובאורך שהכנת קודם לכ-13 ס"מ.</p>
+                    <ul className="space-y-1 list-disc list-inside mr-2">
+                      <li>הוסף רצועה אחת לצלחת א, ואת הרצועה האחרת לצלחת ב.</li>
+                      <li>הנח את שתי הרצועות שבצלחות על נייר המגבת. הנח את הקצה של אחת הרצועות על הרצועה האחרת, וחבר אותן זו לזו באמצעות "מהדק מסרדי" (שדכן). הקפד שהסיכה תמוקם לאורך הרצועות.</li>
+                      <li>באותו אופן חבר את שתי הרצועות שבצלחת ב.</li>
+                      <li>שמור את חלקי העלים הגזורים להמשך העבודה.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -120,10 +114,6 @@ export default function PartA({ user }) {
                 <p><strong>💡 לידיעתך:</strong> פליטת גז במבחנה גורמת לדחיקת הנוזל מהמבחנה אל הפיפטה, על כן יש התקדמות של קו הנוזל בפיפטה.</p>
               </div>
 
-              <div className="bg-amber-50 border border-amber-300 rounded-lg p-3 mt-3">
-                <p className="font-bold text-amber-800">⏱️ עליך להמתין לפחות 15 דקות. בזמן ההמתנה המשך לחלק ב.</p>
-                <p className="text-amber-700 text-xs mt-1">בסיום עבודתך בחלק ב תעבור לחלק א2 לסיים.</p>
-              </div>
             </div>
           </div>
 
