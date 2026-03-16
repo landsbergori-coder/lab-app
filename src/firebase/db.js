@@ -3,6 +3,7 @@ import {
   getDoc,
   setDoc,
   updateDoc,
+  deleteDoc,
   collection,
   getDocs,
   serverTimestamp,
@@ -86,6 +87,22 @@ export async function getAllSubmissions() {
 export async function updateTeacherNotes(idNumber, notes) {
   const ref = doc(db, 'submissions', idNumber)
   await updateDoc(ref, { teacherNotes: notes })
+}
+
+export async function deleteStudent(idNumber) {
+  await deleteDoc(doc(db, 'students', idNumber))
+  await deleteDoc(doc(db, 'submissions', idNumber))
+}
+
+export async function unsubmitSubmission(idNumber) {
+  const ref = doc(db, 'submissions', idNumber)
+  await updateDoc(ref, {
+    submitted: false,
+    graded: false,
+    scores: {},
+    totalScore: null,
+    endTime: null,
+  })
 }
 
 export async function updateQuestionScore(idNumber, questionKey, points, explanation) {

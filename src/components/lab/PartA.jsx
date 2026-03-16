@@ -51,46 +51,78 @@ export default function PartA({ user }) {
             <div className="bg-green-100 px-4 py-2 font-bold text-green-800">
               חלק א׳.1 – הכנת מערכת הניסוי
             </div>
-            <div className="p-4 space-y-3">
+            <div className="p-4 space-y-3 text-sm">
               <p><span className="font-semibold text-green-700">א.</span> באמצעות עט לסימון זכוכית, סמן שלוש מבחנות באותיות א, ב, ג.</p>
-              <p><span className="font-semibold text-green-700">ב.</span> על שולחנך כלי ובו תמיסת ביקרבונט (NaHCO₃) בריכוז 1%, וכלי ובו תמיסת נתרן ביקרבונט בריכוז 2%.</p>
+              <p><span className="font-semibold text-green-700">ב.</span> על שולחנך כלי ובו תמיסת נתרן ביקרבונט (NaHCO₃) בריכוז 1%, וכלי ובו תמיסת נתרן ביקרבונט בריכוז 2%.</p>
 
-              <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm">
-                <strong>מלא את המבחנות א–ג בתמיסות הביקרבונט (אין צורך לדייק):</strong>
-                <ul className="mt-2 space-y-1 list-disc list-inside">
-                  <li>מלא את מבחנה <strong>א</strong> בתמיסת נתרן ביקרבונט <strong>בריכוז 1%</strong></li>
-                  <li>מלא את מבחנות <strong>ב, ג</strong> בתמיסת נתרן ביקרבונט <strong>בריכוז 2%</strong></li>
+              <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
+                <p className="font-semibold mb-1">מלא את המבחנות א–ג בתמיסות הביקרבונט (אין צורך לדייק):</p>
+                <ul className="mt-1 space-y-1 list-disc list-inside">
+                  <li>מלא את מבחנה <strong>א</strong> בתמיסת נתרן ביקרבונט בריכוז <strong>1%</strong></li>
+                  <li>מלא את מבחנות <strong>ב, ג</strong> בתמיסת נתרן ביקרבונט בריכוז <strong>2%</strong></li>
                 </ul>
               </div>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-sm">
-                <strong>💡 לידיעתך:</strong> תמיסה מימית של נתרן ביקרבונט היא מקור של פחמן דו-חמצני לצמח.
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                <p><strong>💡 לידיעתך:</strong> תמיסה מימית של נתרן ביקרבונט היא מקור של פחמן דו-חמצני לצמח.</p>
               </div>
 
-              {/* Two-column table */}
-              <div className="mt-4">
+              <p><span className="font-semibold text-green-700">ג.</span> על שולחנך שתי צלחות לשימוש חד-פעמי. סמן אותן באותיות א-ב.</p>
+
+              {/* Two-column: leaf strip preparation */}
+              <div className="mt-3">
                 <p className="font-semibold mb-2 text-green-800">על שולחנך עלים של צמח. עבד לפי ההנחיות:</p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="border-2 border-green-300 rounded-xl p-4 bg-green-50">
-                    <h4 className="font-bold text-green-800 text-center mb-3 pb-2 border-b border-green-300">
-                      🟢 יהודי נודד
-                    </h4>
-                    <ul className="space-y-2 text-sm">
-                      <li>• <strong>יב.</strong> על שולחנך עלי ומכתש. החזק עלה אחד מעל המכתש וגזור אותו בעזרת מספריים לחתיכות קטנות.</li>
-                      <li>• גזור גם את חתיכות העלים שנותרו מסעיף ג.</li>
-                      <li>• <strong>יג.</strong> כתוש את חתיכות העלים שבמכתש.</li>
-                      <li>• <strong>יד.</strong> על שולחנך מבחנה המסומנת "אתנול" ובה תמיסת אתנול, וכלי ובו מי ברז.</li>
-                    </ul>
+                    <h4 className="font-bold text-green-800 text-center mb-3 pb-2 border-b border-green-300">🟢 יהודי נודד</h4>
+                    <div className="space-y-2 text-xs">
+                      <p><strong>ד.</strong> הכן שתי רצועות של עלה ברוחב כ-1 ס"מ ובאורך כולל של 12 ס"מ. הצוּר באיורים I–IV ופעל כך:</p>
+                      <ul className="space-y-1 list-disc list-inside mr-2">
+                        <li>בחר את העלה הגדול ביותר והנח אותו על נייר מגבת. הנח את הסרגל ביותר בקצה העליון של העלה במקום שרוחבו הוא 2 ס"מ. בעזרת סכין חתוך את העלה לרוחבו.</li>
+                        <li>חזור על הפעולה בקצה האחר של העלה.</li>
+                        <li>הנח את הסרגל במרכז גדלות העלה לאורכו. חתוך את העלה לאורך הסרגל כך שתקבל שתי רצועות ארוכות של עלה.</li>
+                        <li>רצועה אחת הנח בצלחת א ורצועה שנייה – בצלחת ב.</li>
+                        <li>רשום את אורך הרצועות שהכנת: _____ ס"מ.</li>
+                      </ul>
+                      <p className="mt-2"><strong>ה.</strong> אם הרצועה שהכנת קצרה מ-12 ס"מ, חזור על ההוראות בסעיף ד: הכן רצועות נוספות ברוחב כ-1 ס"מ ובאורך שהכנת קודם לכ-13 ס"מ.</p>
+                      <ul className="space-y-1 list-disc list-inside mr-2">
+                        <li>הוסף רצועה אחת לצלחת א, ואת הרצועה האחרת לצלחת ב.</li>
+                        <li>הנח את שתי הרצועות שבצלחות על נייר המגבת. הנח את הקצה של אחת הרצועות על הרצועה האחרת, וחבר אותן זו לזו באמצעות "מהדק מסרדי" (שדכן). הקפד שהסיכה תמוקם לאורך הרצועות.</li>
+                        <li>באותו אופן חבר את שתי הרצועות שבצלחת ב.</li>
+                        <li>שמור את חלקי העלים הגזורים להמשך העבודה.</li>
+                      </ul>
+                    </div>
                   </div>
                   <div className="border-2 border-purple-300 rounded-xl p-4 bg-purple-50">
-                    <h4 className="font-bold text-purple-800 text-center mb-3 pb-2 border-b border-purple-300">
-                      🟣 אחירנטוס / שזיף פיסרדי
-                    </h4>
-                    <ul className="space-y-2 text-sm">
-                      <li>• <strong>יב.</strong> על שולחנך עלי ומכתש. החזק 5 עלים מעל המכתש וגזור אותם בעזרת מספריים לחתיכות קטנות.</li>
-                    </ul>
+                    <h4 className="font-bold text-purple-800 text-center mb-3 pb-2 border-b border-purple-300">🟣 אחירנטוס / שזיף פיסרדי</h4>
+                    <div className="space-y-2 text-xs">
+                      <p><strong>ד.</strong> עבוד לפי ההנחיות שבעמודה השמאלית.</p>
+                    </div>
                   </div>
                 </div>
+              </div>
+
+              <p><span className="font-semibold text-green-700">ו.</span> הכנס כל אחת מהרצועות שהכנת לפי ההוראות בסעיף ד-ה את הרצועה לכל אחת מהמבחנות א-ב. אם הרצועות העלים "נשברות", התעלם מכך.</p>
+              <p className="bg-yellow-50 border border-yellow-200 rounded p-2"><strong>אל</strong> תכניס רצועות עלה למבחנה ג.</p>
+
+              <p><span className="font-semibold text-green-700">ז.</span> הוסף למבחנה א תמיסת נתרן ביקרבונט בריכוז 1% עד שהמבחנה תהיה מלאה לגמרי.</p>
+              <p><span className="font-semibold text-green-700">ח.</span> לרשותך פקק שבכל אחד מהם נועצה מחט המחוברת לפיפטה באמצעות צינורית גומי. פרוס נייר מגבת על השולחן. הוצא את מבחנה א מעל כלי הפסולת, ופקוק אותה היטב בפקק המחובר לפיפטה, כך שכמות מהנוזל שבה תעבור דרך הצינורית אל הפיפטה.</p>
+              <div className="bg-gray-50 border border-gray-200 rounded p-2 text-xs">הנוזל שנשפך מהמבחנה אינו מסוכן למגע. הנח את המבחנה הפקוקה על נייר מגבת.</div>
+              <p><span className="font-semibold text-green-700">ט.</span> אם אינך רואה את קו הנוזל בפיפטה, הרם את המבחנה ושחרר את הפקק ממנה, הוסף תמיסת ביקרבונט 1%, ושוב הדק היטב את הפקק.</p>
+              <p><span className="font-semibold text-green-700">י.</span> הוסף למבחנות ב ו-ג תמיסת נתרן ביקרבונט בריכוז 2% עד שהמבחנות יהיו מלאות לגמרי. חזור על ההוראות בסעיפים ח-ט עם מבחנות ב-ג ועם תמיסת נתרן ביקרבונט בריכוז 2%. הנח את שלוש המבחנות על נייר המגבת בצורה שהעלים בשתי המבחנות יפנו כלפי מעלה באופן דומה ככל האפשר.</p>
+              <p><span className="font-semibold text-green-700">יא.</span> כוון את המנורה כך שהמרחק בין המנורה לבין המבחנות יהיה כ-10 ס"מ והדלק אותה. על המנורה לאייר מלמעלה את כל המבחנות באופן אחיד.</p>
+              <ul className="list-disc list-inside mr-4 space-y-1">
+                <li>המתן 3 דקות להתייצבות מערכת הניסוי.</li>
+                <li>כעבור 3 דקות סמן על כל פיפטה, בעזרת עט לרישום על זכוכית, את המקום של קו הנוזל. זהו קו הנוזל ההתחלתי.</li>
+                <li>רשום את השעה: _______</li>
+              </ul>
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs">
+                <p><strong>💡 לידיעתך:</strong> פליטת גז במבחנה גורמת לדחיקת הנוזל מהמבחנה אל הפיפטה, על כן יש התקדמות של קו הנוזל בפיפטה.</p>
+              </div>
+
+              <div className="bg-amber-50 border border-amber-300 rounded-lg p-3 mt-3">
+                <p className="font-bold text-amber-800">⏱️ עליך להמתין לפחות 15 דקות. בזמן ההמתנה המשך לחלק ב.</p>
+                <p className="text-amber-700 text-xs mt-1">בסיום עבודתך בחלק ב תעבור לחלק א2 לסיים.</p>
               </div>
             </div>
           </div>

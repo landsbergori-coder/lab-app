@@ -124,31 +124,56 @@ export default function PartB({ user, onAnswered }) {
           <h2 className="text-white font-bold text-lg">הנחיות חלק ב׳ – הפרדת צבענים (פיגמנטים) בעלים צבעוניים</h2>
         </div>
         <div className="p-5 text-sm text-green-900 space-y-3" dir="rtl">
-          <p>לצבעונים שונים המצוויים בעלי צמחים יש מסיסות שונה במים ובאתנול (כוהל / אלכוהול). בסעיף יב עבוד יב בהתאם לעצמאותך.</p>
+          <p>לצבעונים שונים המצוויים בעלי צמחים יש מסיסות שונה במים ובאתנול (כוהל / אלכוהול). בסעיף יב עבוד בהתאם לצמח שלרשותך.</p>
 
+          {/* Step יב - two-column */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="border border-green-200 rounded-lg p-3 bg-green-50">
+            <div className="border-2 border-green-300 rounded-xl p-3 bg-green-50">
               <p className="font-bold text-green-800 mb-2">🟢 יהודי נודד</p>
-              <ul className="space-y-1 text-xs">
-                <li>יב. על שולחנך עלי ומכתש. החזק עלה אחד מעל המכתש וגזור אותו לחתיכות קטנות. גזור גם את חתיכות העלים שנותרו מסעיף ג.</li>
-              </ul>
+              <p className="text-xs">יב. על שולחנך עלי ומכתש. החזק עלה אחד מעל המכתש וגזור אותו בעזרת מספריים לחתיכות קטנות. גזור גם את חתיכות העלים שנותרו מסעיף ג.</p>
             </div>
-            <div className="border border-purple-200 rounded-lg p-3 bg-purple-50">
-              <p className="font-bold text-purple-800 mb-2">🟣 אחירנטוס / שזיף פיסרדי</p>
-              <ul className="space-y-1 text-xs">
-                <li>יב. על שולחנך עלי ומכתש. החזק 5 עלים מעל המכתש וגזור אותם לחתיכות קטנות. בעזרת מספריים.</li>
-              </ul>
+            <div className="border-2 border-purple-300 rounded-xl p-3 bg-purple-50">
+              <p className="font-bold text-purple-800 mb-2">🟣 אחירנטוס או שזיף פיסרדי</p>
+              <p className="text-xs">יב. על שולחנך עלי ומכתש. החזק 5 עלים מעל המכתש וגזור אותם בעזרת מספריים לחתיכות קטנות.</p>
             </div>
           </div>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
-            <p className="font-semibold text-amber-800 mb-1">⏱️ שים לב:</p>
-            <p>עליך להמתין כ־8 דקות. אין לטלטל את המבחנה.</p>
-          </div>
+          <p><span className="font-semibold text-green-700">יג.</span> כתוש את חתיכות העלים שבמכתש.</p>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-            <p className="font-bold text-blue-800">חלק א2 – בדיקת תוצאות הפוטוסינתזה בעלים</p>
-            <p className="text-xs mt-1">אם לא עברו 15 דקות מהשעה שרשמת בסעיף יא, המתן. לאחר שעברו 15 דקות, כבה את המנורה ובדוק יסתיים חלק א של הניסוי.</p>
+          <p><span className="font-semibold text-green-700">יד.</span> על שולחנך מבחנה המסומנת "אתנול" ובה תמיסת אתנול, וכלי ובו מי ברז. סמן פיפטה אחת "מים" ואת האחרת — "אתנול".</p>
+          <ul className="list-none mr-4 space-y-1">
+            <li>— הוסף למכתש 1 מ"ל מים והמשך לכתוש את העלים.</li>
+            <li>— הוסף למכתש 2 מ"ל אתנול ופקוק את המבחנה "אתנול".</li>
+            <li>— המשך לכתוש עד שתקבל רסק.</li>
+          </ul>
+
+          <p><span className="font-semibold text-green-700">טו.</span> סמן מבחנה "מיצוי".</p>
+          <ul className="list-none mr-4 space-y-1">
+            <li>— הנח משפך במבחנה "מיצוי" ורפד אותו בפיסת גזה (8 שכבות).</li>
+            <li>— באמצעות הכף העבר את כל רסק העלים ואת כל הנוזל מהמכתש שבמבחנה.</li>
+            <li>— כשיסתיים הסינון סחט את הגזה כדי להוציא את שאריות הנוזל.</li>
+            <li>— העבר את המשפך עם הגזה לכלי הפסולת.</li>
+          </ul>
+
+          <p><span className="font-semibold text-green-700">טז.</span> לרשותך רצועה של נייר סינון. הייצר וסמן בעיפרון קו לרוחב רצועת הנייר, במרחק 1.5 ס"מ מקצה אחד שלה.</p>
+          <ul className="list-none mr-4 space-y-1">
+            <li>— טבול פיפטת פסטר בנוזל שקיבלת במבחנה "מיצוי". הוצא את הפיפטה, בעדינות הנח אותה על הקו שסימנת בנייר, כך שטיפה אחת תיספג בנייר. המתן שהאתנול יתנדף והטיפה תתייבש. תוכל לזרז את הייבוש על ידי נפנוף קל של רצועת הנייר.</li>
+            <li>— באותו אופן הוסף עוד 8–10 טיפות מיצוי באותו מקום שבו טפטפת את הטיפה הראשונה.</li>
+          </ul>
+
+          <p><span className="font-semibold text-green-700">יז.</span> לאחר שהטיפות התייבשו, הכנס את רצועת הנייר למבחנה האתנול, כך שהקצה שסומן בקו טבול בתמיסת האתנול. פקוק את המבחנה והעמד אותה בכן המבחנות. האתנול ייספג בנייר ויעלה כלפי מעלה.</p>
+          <ul className="list-none mr-4 space-y-1">
+            <li>— עליך להמתין כ-8 דקות. <strong>שים לב: אין לטלטל את המבחנה.</strong></li>
+            <li>— רשום את השעה: _______</li>
+          </ul>
+
+          <p><span className="font-semibold text-green-700">יח.</span> בדוק מדי כמה דקות את רצועת הנייר שבמבחנה. כאשר אתה מבחין ביותר מצבע אחד על רצועת הנייר, הוצא אותה מהמבחנה והנח אותה על נייר מגבת.</p>
+          <ul className="list-none mr-4 space-y-1">
+            <li>— רשום את הצבעים שהתקבלו: _______________________</li>
+          </ul>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs">
+            <p><strong>💡 לידיעתך:</strong> תמיסת האתנול שבמבחנה היא "נוזל מריץ". הנוזל נע לאורך הנייר בכוח הנימיות, ויחד אתו נעים הצבעונים (הפיגמנטים) השונים. כל צבע מתקדם בקצב שונה האופייני לו.</p>
           </div>
         </div>
       </div>

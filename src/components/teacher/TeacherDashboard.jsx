@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getAllSubmissions } from '../../firebase/db'
+import { getAllSubmissions, deleteStudent, unsubmitSubmission } from '../../firebase/db'
 import StudentDetail from './StudentDetail'
 import ClassStats from './ClassStats'
 import { exportToExcel, exportToCSV } from '../../utils/export'
@@ -24,6 +24,21 @@ export default function TeacherDashboard({ onLogout }) {
   const [selected, setSelected]       = useState(null)
   const [activeTab, setActiveTab]     = useState('list') // 'list' | 'stats'
   const [search, setSearch]           = useState('')
+
+  const handleDelete = async (sub) => {
+    if (!window.confirm(`למחוק את ${sub.studentName}? פעולה זו אינה הפיכה.`)) return
+    await deleteStudent(sub.studentId)
+    setSubmissions(prev => prev.filter(s => s.id !== sub.id))
+  }
+
+  const handleUnsubmit = async (sub) => {
+    if (!window.confirm(`לאפשר ל-${sub.studentName} לחזור לעבוד על המעבדה?`)) return
+    await unsubmitSubmission(sub.studentId)
+    setSubmissions(prev => prev.map(s => s.id === sub.id
+      ? { ...s, submitted: false, graded: false, scores: {}, totalScore: null, endTime: null }
+      : s
+    ))
+  }
 
   const load = async () => {
     setLoading(true)
@@ -211,12 +226,30 @@ export default function TeacherDashboard({ onLogout }) {
                               {sub.endTime?.toDate ? sub.endTime.toDate().toLocaleDateString('he-IL') : '–'}
                             </td>
                             <td className="px-3 py-2">
-                              <button
-                                onClick={() => setSelected(sub)}
-                                className="bg-green-600 hover:bg-green-700 text-white text-xs px-3 py-1 rounded-lg transition-colors"
-                              >
-                                צפייה
-                              </button>
+                              <div className="flex items-center gap-1">
+                                <button
+                                  onClick={() => setSelected(sub)}
+                                  className="bg-green-600 hover:bg-green-700 text-white text-xs px-2 py-1 rounded-lg transition-colors"
+                                >
+                                  צפייה
+                                </button>
+                                {sub.submitted && (
+                                  <button
+                                    onClick={() => handleUnsubmit(sub)}
+                                    className="bg-amber-500 hover:bg-amber-600 text-white text-xs px-2 py-1 rounded-lg transition-colors"
+                                    title="אפשר חזרה לעבודה"
+                                  >
+                                    ↩ חזרה
+                                  </button>
+                                )}
+                                <button
+                                  onClick={() => handleDelete(sub)}
+                                  className="bg-red-500 hover:bg-red-600 text-white text-xs px-2 py-1 rounded-lg transition-colors"
+                                  title="מחק תלמיד"
+                                >
+                                  🗑
+                                </button>
+                              </div>
                             </td>
                           </tr>
                         )
